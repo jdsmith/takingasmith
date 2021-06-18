@@ -7,14 +7,14 @@ const init = async () => {
         port: 3000,
         routes: {
             files: {
-                relativeTo: Path.join(__dirname, 'public')
+                relativeTo: Path.join(__dirname, 'build')
             }
         }
     });
 
-    server.route(routes);
-
     await server.register(require('@hapi/inert'));
+
+    server.route(routes);
     await server.start();
     console.log(`Server running on ${server.info.uri}`);
 };

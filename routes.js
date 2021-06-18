@@ -1,3 +1,5 @@
+const Path = require('path');
+
 module.exports = [{
     method: 'GET',
     path: '/health',
@@ -5,5 +7,10 @@ module.exports = [{
 },{
     method: 'GET',
     path: '/{any*}',
-    handler: (request, h) => h.file('index.html')
+    handler: {
+        directory: {
+            path: Path.join(__dirname, 'build'),
+            index: ['index.html']
+        }
+    }
 }];
