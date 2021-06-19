@@ -6,12 +6,13 @@ import {
 
 import Home from "./home/Home";
 import RSVPForm from "./rsvp/RSVPForm";
+import './App.css';
 
 function App() {
   return (
     <main className="App">
       <header className="App-header">
-        #takingasmith
+        #TakingaSmith
       </header>
       <Router>
         <Switch>

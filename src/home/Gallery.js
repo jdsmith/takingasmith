@@ -1,5 +1,7 @@
+import './Gallery.css';
+
 export const Gallery = () => (
-    <div>
+    <div className="gallery">
         if I know what love is, it is because of you
         <br />
         - herman hesse

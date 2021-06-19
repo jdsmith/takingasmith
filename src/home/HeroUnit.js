@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
+import './HeroUnit.css';
 
 export const HeroUnit = () => (
-    <section>
+    <section className="hero-unit">
         <h2>
             Kelsey Raymond &amp; Joshua Smith
         </h2>
@@ -11,7 +12,7 @@ export const HeroUnit = () => (
         <p>
             high mountain hall, camden, maine
         </p>
-        <Link to="/rsvp">
+        <Link to="/rsvp" className='rsvp-button'>
             RSVP
         </Link>
     </section>
